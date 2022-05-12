@@ -26,8 +26,8 @@ def get_torso(path,img_name, ext):
             semi_bw = bw/2
             p_y = y+h + int(0.5*h)
             final_y = p_y + int(3*h)
-            torso_topleft = ( int((x+(w/2)) - semi_bw) , p_y)
-            torso_bottomright = (int((x+(w/2)) + semi_bw), final_y)
+            torso_topleft = [int((x+(w/2)) - semi_bw) , p_y]
+            torso_bottomright = [int((x+(w/2)) + semi_bw), final_y]
             torso.append([torso_topleft, torso_bottomright])
         return torso
 
